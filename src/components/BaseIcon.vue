@@ -1,9 +1,3 @@
-<template>
-	<svg focusable="false">
-		<use :href="`/images/icons/${id}.svg`" />
-	</svg>
-</template>
-
 <script setup>
 defineProps({
 	id: {
@@ -12,6 +6,12 @@ defineProps({
 	},
 });
 </script>
+
+<template>
+	<svg focusable="false">
+		<use :href="`/images/icons/${id}.svg`" />
+	</svg>
+</template>
 
 <style lang="scss" scoped>
 svg {

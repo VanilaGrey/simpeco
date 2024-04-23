@@ -1,8 +1,48 @@
+html {
+	font-size: 18px;
+	line-height: 1.4;
+	font-weight: 400;
+	font-family: "Inter", sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	text-rendering: optimizeLegibility;
+	-webkit-tap-highlight-color: transparent;
+}
+
 body {
 	margin: 0;
+	color: $white;
 }
 
 img {
 	max-width: 100%;
 	height: auto;
+}
+
+a {
+	text-decoration: none;
+	text-decoration-skip-ink: none;
+	color: inherit;
+
+	&:not([href]) {
+		pointer-events: none;
+	}
+
+	&:hover,
+	&:active,
+	&:focus-visible,
+	&:focus {
+		outline: none;
+		color: $green;
+	}
+}
+
+.container {
+	box-sizing: border-box;
+	width: 100%;
+    max-width: 1326px;
+	margin-right: auto;
+	margin-left: auto;
+	padding-right: 20px;
+	padding-left: 20px;
 }

@@ -1,0 +1,9 @@
+@each $weight in 400, 500, 700, 900 {
+	@font-face {
+		font-weight: $weight;
+		font-family: "Inter";
+		font-style: normal;
+		src: url("/fonts/Inter-#{$weight}.woff2") format("woff2");
+		font-display: swap;
+	}
+}

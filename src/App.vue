@@ -1,3 +1,9 @@
+<script setup>
+import { RouterView } from 'vue-router';
+import BaseHeader from './components/BaseHeader.vue';
+import BaseFooter from './components/BaseFooter.vue';
+</script>
+
 <template>
 	<div class="page">
 		<base-header />
@@ -5,12 +11,6 @@
 		<base-footer />
 	</div>
 </template>
-
-<script setup>
-import { RouterView } from 'vue-router';
-import BaseHeader from './components/BaseHeader.vue';
-import BaseFooter from './components/BaseFooter.vue';
-</script>
 
 <style lang="scss" scoped>
 .page {
